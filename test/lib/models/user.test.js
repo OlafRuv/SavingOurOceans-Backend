@@ -10,10 +10,10 @@ describe("Users",() =>{
 		expect(user.getPassword).toBe("1234");
 		expect(user.getCountry).toBe("mexico");
 		expect(user.getState).toBe("chihuahua");
-		expect(user.getState).not.toBeNull();
+		expect(user.getCreationDate).not.toBeNull();
 
 	});
-	test("1) Test setters", () => {
+	test("2) Test setters", () => {
 		const user = new User("nombre", "apellido", "correo@correo.mx","1234", "mexico", "chihuahua");
 		user.setEmail = "newCorreo@correo.mx";
 		user.setPassword = "5678";
