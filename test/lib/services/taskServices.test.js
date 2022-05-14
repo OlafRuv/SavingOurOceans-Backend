@@ -24,4 +24,9 @@ describe("Task model",() =>{
     
 		expect(TaskServices.updateItsDone(task, false)).toBe(false);
 	});
+	test("4) Test updatePoints", () => {
+		const task = TaskServices.createTask(1,"Task Description",10,true);
+		TaskServices.updatePoints(task, 32);
+		expect(TaskServices.getPoints(task)).toBe(32);
+	});
 });
