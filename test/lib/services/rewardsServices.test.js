@@ -29,7 +29,6 @@ describe("Rewards Services model",() =>{
         
 		expect(rewardInfoWOCode).not.toBeNull();
 		expect(rewardInfoWOCode).toMatchObject(expected);
-		expect(rewardInfoWOCode.id).toBe(10);
 	});
 
 	test("3) Test getInfoWCode", () => {
