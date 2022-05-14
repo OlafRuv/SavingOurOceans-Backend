@@ -20,7 +20,7 @@
   "homepage": "https://github.com/OlafRuv/SavingOurOceans-Backend#readme",
   "devDependencies": {
     "eslint": "^8.15.0",
-    "jest": "^28.1.0",
+    "jest": "^26.0.0",
     "prisma": "^3.14.0"
   },
   "dependencies": {
