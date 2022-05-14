@@ -21,6 +21,7 @@ describe("Rewards Services model",() =>{
 		const expected = {
 			id: 1,
 			sponsor: "Coke",
+			pointsValue: 30,
 			name: "Free Coke",
 			type: "Product",
 			deadLine: "Sat May 14 2028"
@@ -28,6 +29,7 @@ describe("Rewards Services model",() =>{
         
 		expect(rewardInfoWOCode).not.toBeNull();
 		expect(rewardInfoWOCode).toMatchObject(expected);
+		expect(rewardInfoWOCode.id).toBe(10);
 	});
 
 	test("3) Test getInfoWCode", () => {
