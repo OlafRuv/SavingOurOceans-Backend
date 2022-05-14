@@ -1,7 +1,7 @@
 {
   "name": "saving-our-oceans-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend app for Saving Our Oceans Project",
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/jest/bin/jest",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/OlafRuv/SavingOurOceans-Backend.git"
   },
-  "author": "",
+  "author": "ExplorersH2O",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/OlafRuv/SavingOurOceans-Backend/issues"
