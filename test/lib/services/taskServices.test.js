@@ -1,4 +1,3 @@
-const Task = require("./../../../lib/models/task"); 
 const TaskServices = require("./../../../lib/services/taskServices"); 
 
 describe("Task model",() =>{
@@ -13,15 +12,15 @@ describe("Task model",() =>{
 	});
   
 	test("2) Test getInfo", () => {
-    const task = TaskServices.createTask(1,"Task Description",10,true);
-    const taskInfo = TaskServices.getInfo(task) 
+		const task = TaskServices.createTask(1,"Task Description",10,true);
+		const taskInfo = TaskServices.getInfo(task); 
 		expect(taskInfo).not.toBeNull();
 		expect(taskInfo).toBeInstanceOf(Object);
 		expect(taskInfo.id).toBe(1);
 	});
   
 	test("3) Test updateItsDone", () => {
-    const task = TaskServices.createTask(1,"Task Description",10,true);
+		const task = TaskServices.createTask(1,"Task Description",10,true);
     
 		expect(TaskServices.updateItsDone(task, false)).toBe(false);
 	});
