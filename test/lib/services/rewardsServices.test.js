@@ -21,7 +21,6 @@ describe("Rewards Services model",() =>{
 		const expected = {
 			id: 1,
 			sponsor: "Coke",
-			pointsValue: 30,
 			name: "Free Coke",
 			type: "Product",
 			deadLine: "Sat May 14 2028"
