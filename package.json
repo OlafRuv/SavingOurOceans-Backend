@@ -1,0 +1,27 @@
+{
+  "name": "saving-our-oceans-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlafRuv/SavingOurOceans-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlafRuv/SavingOurOceans-Backend/issues"
+  },
+  "homepage": "https://github.com/OlafRuv/SavingOurOceans-Backend#readme",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "jest": "^28.1.0",
+    "prisma": "^3.14.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
