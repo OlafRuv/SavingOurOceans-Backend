@@ -1,4 +1,3 @@
-const User = require("./../../../lib/models/user");
 const UserServices = require("./../../../lib/services/userServices");
 
 describe("Users",() =>{
@@ -21,10 +20,10 @@ describe("Users",() =>{
 		expect(UserServices.getUserInfo(user)).toBeInstanceOf(Object);
 	});
 	test("3) Test addPoints and subtractPoints", () => {
-    const user = UserServices.createUser(1,"nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
+		const user = UserServices.createUser(1,"nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
 		UserServices.addPoints(user, 123);
-    expect(UserServices.getPoints(user)).toBe(123);
-    UserServices.subtractPoints(user, 23);
-    expect(UserServices.getPoints(user)).toBe(100);
+		expect(UserServices.getPoints(user)).toBe(123);
+		UserServices.subtractPoints(user, 23);
+		expect(UserServices.getPoints(user)).toBe(100);
 	});
 });
