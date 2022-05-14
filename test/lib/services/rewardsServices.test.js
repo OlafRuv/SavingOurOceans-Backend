@@ -2,9 +2,9 @@ const RewardsServices = require("./../../../lib/services/rewardsServices");
 
 describe("Rewards Services model",() =>{
 	test("1) Create task", () => {
-        const reward = RewardsServices.createRewards(1,"Coke",123456,30,"Free Coke","Product","Sat May 14 2028");
+		const reward = RewardsServices.createRewards(1,"Coke",123456,30,"Free Coke","Product","Sat May 14 2028");
 
-        expect(reward).not.toBeNull();
+		expect(reward).not.toBeNull();
 		expect(reward.id).toBe(1);
 		expect(reward.sponsor).toBe("Coke");
 		expect(reward.code).toBe(123456);
@@ -18,45 +18,45 @@ describe("Rewards Services model",() =>{
 	test("2) Test getInfoWOCode", () => {
 		const reward = RewardsServices.createRewards(1,"Coke",123456,30,"Free Coke","Product","Sat May 14 2028");
 		const rewardInfoWOCode = RewardsServices.getInfoWOCode(reward); 
-        const expected = {
-            id: 1,
-            sponsor: "Coke",
-            pointsValue: 30,
-            name: "Free Coke",
-            type: "Product",
-            deadLine: "Sat May 14 2028"
-        }
+		const expected = {
+			id: 1,
+			sponsor: "Coke",
+			pointsValue: 30,
+			name: "Free Coke",
+			type: "Product",
+			deadLine: "Sat May 14 2028"
+		};
         
 		expect(rewardInfoWOCode).not.toBeNull();
-		expect(rewardInfoWOCode).toMatchObject(expected)
+		expect(rewardInfoWOCode).toMatchObject(expected);
 	});
 
 	test("3) Test getInfoWCode", () => {
 		const reward = RewardsServices.createRewards(1,"Coke",123456,30,"Free Coke","Product","Sat May 14 2028");
 		const rewardInfoWCode = RewardsServices.getInfoWCode(reward);
-        const expected = {
-            id: 1,
-            sponsor: "Coke",
-            code: 123456,
-            pointsValue: 30,
-            name: "Free Coke",
-            type: "Product",
-            deadLine: "Sat May 14 2028"
-        }
+		const expected = {
+			id: 1,
+			sponsor: "Coke",
+			code: 123456,
+			pointsValue: 30,
+			name: "Free Coke",
+			type: "Product",
+			deadLine: "Sat May 14 2028"
+		};
 		expect(rewardInfoWCode).not.toBeNull();
-		expect(rewardInfoWCode).toMatchObject(expected)
+		expect(rewardInfoWCode).toMatchObject(expected);
 	});
   
 	test("4) Test getCode", () => {
 		const reward = RewardsServices.createRewards(1,"Coke",123456,30,"Free Coke","Product","Sat May 14 2028");
 		const rewardCode = RewardsServices.getCode(reward); 
-        const expected = {
-            id: 1,
-            code: 123456,
-        }
+		const expected = {
+			id: 1,
+			code: 123456,
+		};
 
 		expect(rewardCode).not.toBeNull();
-        expect(rewardCode).toMatchObject(expected)
+		expect(rewardCode).toMatchObject(expected);
 	});
 
 	test("5) Test getPoints", () => {
