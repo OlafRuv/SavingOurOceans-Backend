@@ -79,14 +79,14 @@ describe("Rewards Controller",() =>{
 		expect(rewardPts.pointsValue).toBe(50);
 	});
 
-	test("7) Test addPoints", () => {
-		const rewardPts = RewardsController.addPoints(rewardObj,10); 
+	test("7) Test subPoints", () => {
+		const rewardPts = RewardsController.subPoints(rewardObj,10); 
 
 		expect(rewardPts).not.toBeNull();
-		expect(rewardPts.pointsValue).toBe(40);
+		expect(rewardPts.pointsValue).toBe(20);
 	});
 
-	test("7) Test updateDeadline", () => {
+	test("8) Test updateDeadline", () => {
 		
 		const newDate = RewardsController.updateDeadline(rewardObj,"tomorrow bro"); 
 
