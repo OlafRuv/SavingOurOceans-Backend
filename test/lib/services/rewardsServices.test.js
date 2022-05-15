@@ -1,9 +1,9 @@
 const RewardsServices = require("./../../../lib/services/rewardsServices"); 
 
 describe("Rewards Services model",() =>{
-	test("1) Create task", () => {
+	test("1) Create reward", () => {
 		const reward = RewardsServices.createRewards(1,"Coke",123456,30,"Free Coke","Product","Sat May 14 2028");
-
+		console.log(reward)
 		expect(reward).not.toBeNull();
 		expect(reward.id).toBe(1);
 		expect(reward.sponsor).toBe("Coke");
@@ -72,7 +72,7 @@ describe("Rewards Services model",() =>{
 		const newPts = RewardsServices.updatePoints(reward,100); 
 
 		expect(newPts).not.toBeNull();
-		expect(newPts).toBe(100);
+		expect(newPts.pointsValue).toBe(100);
 	});
 
 	test("6) Test updateDeadline", () => {
@@ -80,7 +80,7 @@ describe("Rewards Services model",() =>{
 		const newDate = RewardsServices.updateDeadline(reward,"tomorrow bro"); 
 
 		expect(newDate).not.toBeNull();
-		expect(newDate).toBe("tomorrow bro");
+		expect(newDate.deadLine).toBe("tomorrow bro");
 	});
 
 });
