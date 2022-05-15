@@ -28,4 +28,12 @@ model Task {
   itsDone Bool @default(false)
   itsAvailable Bool @default(true)
 }
-
+model Rewards {
+  id Int @id @default(autoincrement())
+  sponsor String
+  code String
+  pointsValue Int
+  name String
+  type String
+  deadLine DateTime
+}
