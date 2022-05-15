@@ -4,9 +4,11 @@
   "description": "Backend app for Saving Our Oceans Project",
   "main": "index.js",
   "scripts": {
+    "start": "node ./lib/server.js",
     "test": "node ./node_modules/jest/bin/jest",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "server": "node ./lib/server.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "dependencies": {
     "@prisma/client": "^3.14.0",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1"
   }
 }
