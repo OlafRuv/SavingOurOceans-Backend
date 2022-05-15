@@ -21,3 +21,11 @@ model User {
   state String
   creationDate DateTime @default(now())
 }
+model Task {
+  id Int @id @default(autoincrement())
+  description String
+  points Int
+  itsDone Bool @default(false)
+  itsAvailable Bool @default(true)
+}
+
