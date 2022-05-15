@@ -2,7 +2,7 @@ const UserServices = require("./../../../lib/services/userServices");
 
 describe("Users",() =>{
 	test("1) Create user", () => {
-		const user = UserServices.createUser("nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
+		const user = UserServices.createUser("nombre", "apellido", "correo@correo.mx","1234",0, "mexico", "chihuahua");
     
 		expect(user).not.toBeNull();
 		expect(user.name).toBe("nombre");
@@ -14,12 +14,12 @@ describe("Users",() =>{
 		expect(user.state).toBe("chihuahua");
 	});
 	test("2) Test getUserInfo", () => {
-		const user = UserServices.createUser("nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
+		const user = UserServices.createUser("nombre", "apellido", "correo@correo.mx","1234",0, "mexico", "chihuahua");
 
 		expect(UserServices.getUserInfo(user)).toBeInstanceOf(Object);
 	});
 	test("3) Test addPoints and subtractPoints", () => {
-		const user = UserServices.createUser("nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
+		const user = UserServices.createUser("nombre", "apellido", "correo@correo.mx","1234",0, "mexico", "chihuahua");
 		UserServices.addPoints(user, 123);
 		expect(UserServices.getPoints(user)).toBe(123);
 		UserServices.subtractPoints(user, 23);
