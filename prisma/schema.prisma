@@ -31,7 +31,7 @@ model Task {
 model Rewards {
   id Int @id @default(autoincrement())
   sponsor String
-  code String
+  code Int
   pointsValue Int
   name String
   type String
