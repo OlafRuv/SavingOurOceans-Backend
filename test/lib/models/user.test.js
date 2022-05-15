@@ -1,10 +1,9 @@
 const User = require("./../../../lib/models/user");
 describe("Users",() =>{
 	test("1) Create user", () => {
-		const user = new User(1,"nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
+		const user = new User("nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
     
 		expect(user).not.toBeNull();
-		expect(user.getId).toBe(1);
 		expect(user.getName).toBe("nombre");
 		expect(user.getLastname).toBe("apellido");
 		expect(user.getEmail).toBe("correo@correo.mx");
@@ -16,7 +15,7 @@ describe("Users",() =>{
 
 	});
 	test("2) Test setters", () => {
-		const user = new User(1, "nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
+		const user = new User( "nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
 		user.setEmail = "newCorreo@correo.mx";
 		user.setPassword = "5678";
 		user.setPoints = 456;

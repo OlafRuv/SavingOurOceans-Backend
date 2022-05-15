@@ -1,7 +1,6 @@
 const UserController = require("./../../../lib/controllers/userController");
 
 const userObject = {
-	id: 1,
 	name: "nombre",
 	lastname: "apellido",
 	email: "correo@correo.mx",
@@ -18,7 +17,6 @@ describe("Users",() =>{
 		console.log(user);
 		
 		expect(user).not.toBeNull();
-		expect(user.id).toBe(1);
 		expect(user.name).toBe("nombre");
 		expect(user.lastname).toBe("apellido");
 		expect(user.email).toBe("correo@correo.mx");
