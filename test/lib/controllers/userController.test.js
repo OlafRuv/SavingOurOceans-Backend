@@ -4,6 +4,7 @@ const userObject = {
 	name: "nombre",
 	lastname: "apellido",
 	email: "correo@correo.mx",
+	points: 0,
 	password: "1234",
 	country: "mexico",
 	state: "chihuahua"
@@ -13,8 +14,6 @@ describe("Users",() =>{
 	test("1) Create user", () => {
 
 		const user = UserController.createUser(userObject);
-   
-		console.log(user);
 		
 		expect(user).not.toBeNull();
 		expect(user.name).toBe("nombre");
@@ -31,10 +30,10 @@ describe("Users",() =>{
 		expect(UserController.getUserInfo(user)).toBeInstanceOf(Object);
 	});
 	test("3) Test addPoints and subtractPoints", () => {
-		const user = UserController.createUser(userObject);
-		UserController.addPoints(user, 123);
+		var user = UserController.createUser(userObject);
+		user = UserController.addPoints(user, 123);
 		expect(UserController.getPoints(user)).toBe(123);
-		UserController.subtractPoints(user, 23);
+		user = UserController.subtractPoints(user, 23);
 		expect(UserController.getPoints(user)).toBe(100);
 	});
 });

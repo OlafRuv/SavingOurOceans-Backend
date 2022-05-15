@@ -1,7 +1,7 @@
 const User = require("./../../../lib/models/user");
 describe("Users",() =>{
 	test("1) Create user", () => {
-		const user = new User("nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
+		const user = new User("nombre", "apellido", "correo@correo.mx","1234",0,"mexico", "chihuahua");
     
 		expect(user).not.toBeNull();
 		expect(user.getName).toBe("nombre");
