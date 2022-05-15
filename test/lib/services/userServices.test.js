@@ -25,5 +25,9 @@ describe("Users",() =>{
 		expect(UserServices.getPoints(user)).toBe(123);
 		UserServices.subtractPoints(user, 23);
 		expect(UserServices.getPoints(user)).toBe(100);
+		const text = UserServices.subtractPoints(user, 103);
+		expect(text).toMatch("Error");
+		expect(UserServices.getPoints(user)).toBe(-3);
 	});
+
 });
