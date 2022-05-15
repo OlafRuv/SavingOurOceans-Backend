@@ -25,8 +25,8 @@ model Task {
   id Int @id @default(autoincrement())
   description String
   points Int
-  itsDone Bool @default(false)
-  itsAvailable Bool @default(true)
+  itsDone Boolean @default(false)
+  itsAvailable Boolean @default(true)
 }
 model Rewards {
   id Int @id @default(autoincrement())
