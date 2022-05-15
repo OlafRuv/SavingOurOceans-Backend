@@ -1,9 +1,22 @@
 const UserController = require("./../../../lib/controllers/userController");
 
+const userObject = {
+	id: 1,
+	name: "nombre",
+	lastname: "apellido",
+	email: "correo@correo.mx",
+	password: "1234",
+	country: "mexico",
+	state: "chihuahua"
+};
+
 describe("Users",() =>{
 	test("1) Create user", () => {
-		const user = UserController.createUser(1,"nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
-    
+
+		const user = UserController.createUser(userObject);
+   
+		console.log(user);
+		
 		expect(user).not.toBeNull();
 		expect(user.id).toBe(1);
 		expect(user.name).toBe("nombre");
@@ -15,12 +28,12 @@ describe("Users",() =>{
 		expect(user.state).toBe("chihuahua");
 	});
 	test("2) Test getUserInfo", () => {
-		const user = UserController.createUser(1,"nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
+		const user = UserController.createUser(userObject);
 
 		expect(UserController.getUserInfo(user)).toBeInstanceOf(Object);
 	});
 	test("3) Test addPoints and subtractPoints", () => {
-		const user = UserController.createUser(1,"nombre", "apellido", "correo@correo.mx","1234","mexico", "chihuahua");
+		const user = UserController.createUser(userObject);
 		UserController.addPoints(user, 123);
 		expect(UserController.getPoints(user)).toBe(123);
 		UserController.subtractPoints(user, 23);
