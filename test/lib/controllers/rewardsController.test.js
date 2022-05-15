@@ -1,13 +1,13 @@
 const RewardsController = require("./../../../lib/controllers/rewardsController");
 const rewardObj = {
-    id : 1,
-    sponsor : "Coke",
-    code : 123456,
-    pointsValue : 30,
-    name : "Free Coke",
-    type : "Product",
-    deadLine : "Sat May 14 2028"
-}
+	id : 1,
+	sponsor : "Coke",
+	code : 123456,
+	pointsValue : 30,
+	name : "Free Coke",
+	type : "Product",
+	deadLine : "Sat May 14 2028"
+};
 
 
 describe("Rewards Controller",() =>{
@@ -24,7 +24,7 @@ describe("Rewards Controller",() =>{
 		expect(reward.deadLine).toBe("Sat May 14 2028");
 	});
 
-    test("2) Test getInfoWOCode", () => {
+	test("2) Test getInfoWOCode", () => {
 		const rewardInfoWOCode = RewardsController.getInfoWOCode(rewardObj); 
 		const expected = {
 			id: 1,

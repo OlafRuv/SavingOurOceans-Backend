@@ -21,7 +21,7 @@ describe("Task model",() =>{
   
 	test("3) Test updateItsDone", () => {
 		const task = TaskServices.createTask(1,"Task Description",10,true,true);
-    	const t = TaskServices.updateItsDone(task, false)
+		const t = TaskServices.updateItsDone(task, false);
 		expect(t.itsDone).toBe(false);
 	});
 	
