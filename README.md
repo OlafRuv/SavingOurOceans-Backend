@@ -2,18 +2,18 @@
 
 ## Herramientas 🐋
 
-| Herramientas | Version                                      |
-| ------------ | -------------------------------------------- |
-| Node         | v16.14.0                                     |
-| Npm          | v8.3.1 (It comes with the Node installation) |
-| Jest         | v26.0.04.18.                                 |
-| Express      | v4.18.1                                      |
-| Prisma       | v3.14.0                                      |
-| Eslint       | v8.15.0                                      |
-| PostgreSQL   | v14.3                                        |
-| Postman      | 🐱‍🏍                                       |
-| Git          | v2.35.1.windows.2                            |
-| Github       | 🐱‍💻                                       |
+| Herramientas |                   Version                   |
+| :----------: | :------------------------------------------: |
+|     Node     |                   v16.14.0                   |
+|     Npm     | v8.3.1 (It comes with the Node installation) |
+|     Jest     |                 v26.0.04.18.                 |
+|   Express   |                   v4.18.1                   |
+|    Prisma    |                   v3.14.0                   |
+|    Eslint    |                   v8.15.0                   |
+|  PostgreSQL  |                    v14.3                    |
+|   Postman   |                    🐱‍🏍                    |
+|     Git     |              v2.35.1.windows.2              |
+|    Github    |                    🐱‍💻                    |
 
 ## Diseño de Solución 🐟
 
