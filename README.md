@@ -75,9 +75,47 @@ crearon para:
 | TaskControllers.js | TaskServices.js | Task.js  |
 | RewardControllers.js | RewardServices.js | Reward.js |
 
+A continuación veremos un ejemplo del código para las pruebas
+
+```js
+const TaskServices = require("./../../../lib/services/taskServices"); 
+
+describe("Task model",() =>{
+	test("1) Create task", () => {
+		const task = TaskServices.createTask(1,"Task Description",10,true,true);
+		expect(task).not.toBeNull();
+		expect(task.id).toBe(1);
+		expect(task.description).toBe("Task Description");
+		expect(task.points).toBe(10);
+		expect(task.itsDone).toBe(true);
+		expect(task.itsAvailable).toBe(true);
+	});
+  
+	test("2) Test getInfo", () => {
+		const task = TaskServices.createTask(1,"Task Description",10,true);
+		const taskInfo = TaskServices.getInfo(task); 
+		expect(taskInfo).not.toBeNull();
+		expect(taskInfo).toBeInstanceOf(Object);
+		expect(taskInfo.id).toBe(1);
+	});
+  
+	test("3) Test updateItsDone", () => {
+		const task = TaskServices.createTask(1,"Task Description",10,true,true);
+		const t = TaskServices.updateItsDone(task, false);
+		expect(t.itsDone).toBe(false);
+	});
+})
+```
+Para correr las pruebas, utilice el siguiente comando desde la terminal.
+
+```bash
+> npm test
+```
 
 ### Automatización de Pruebas
-Para la automatización de pruebas, utilizamos *Github actions* para facilitar el proceso de 
+Para la automatización de pruebas, utilizamos *Github actions* para facilitar el proceso de verificación de errores, y evitar que esos errores se lleguen a subir al servidor, ocasionando problemas más graves.
+
+El código utilizado para automatizarlo es el siguiente: 
 ```yaml
 name: CI
 on: push
@@ -96,23 +134,18 @@ jobs:
 ### API
 La página web necesita de un servicio API que es el que se encargará de enlazar el frontend con el backend. Para eso nosotros utilizamos la dependencia de *Express* para la utilización de los métodos HTTP, y para conectar los servers, *cors*.
 
-Para ver la documentación de la API y sus *endpoints*, darle click aquí.
+Para ver la documentación de la API y sus *endpoints*, darle click [aquí](https://documenter.getpostman.com/view/20636313/UyxjFm6q).
 
-https://documenter.getpostman.com/view/20636313/UyxjFm6q
-
-<!-- | HTTP Method | Endpoint | Description |
-| ----------- | -------- | ----------- |
-| POST | /createUser | Crea un usuario |
-| POST | /user | Obtiene un usuario |
-| P |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  | -->
 
 ### Base de Datos 
 
-Prisma y Postgres
+Para la creación de la base de datos, utilizamos *postgreSQL*, y para facilitar la escritura de código, se utilizó la dependencia de prisma, el cual permite agilizar la escritura de SQL.
+
+En el archivo de `prisma/schema.prisma`, se desarrollan los modelos que estarán en la base de datos, y en dado caso de modificar o agregar un nuevo modelo/tabla, se debe de correr el siguiente comando.
+```bash
+> npx prisma migrate dev --name init
+```
+De igual manera podemos encontrar el archivo `prisma/seed.js`, el cual permite general datos para llenar nuestras tablas con cierta información inicial.
 
 ### Deployment de Aplicación
 
