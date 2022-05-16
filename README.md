@@ -1,17 +1,19 @@
 # SavingOurOceans-Backend 🐳
 
 Hola nosotros somos el equipo de ```EXPLORERS H2O``` 🐟
+<img align="right" height="200px" src="https://www.pngplay.com/wp-content/uploads/11/Mantine-Pokemon-Background-PNG.png" alt="charmander" />
+</br>
 
 Se nos hizó el challenge de generar un desarrollo de software que buscará combatir la problemática que se esta viviendo hoy en día respecto a los oceanos.
-Elegimos tomar el camino de crear el desarrollo del proyecto SavingOurOceans, un proyecto que incentiva a las personas y empresas a generar un cambio, pero de una manera en la que no se requiera que estas vivan u operen cerca del mar, una manera en la que tanto los usuarios, las empresas y nuestros oceanos salgan beneficiados de esta puesta en acción.
+Elegimos tomar el camino de crear el desarrollo del proyecto SavingOurOceans🐠, un proyecto que incentiva a las personas y empresas a generar un cambio, pero de una manera en la que no se requiera que estas vivan u operen cerca del mar, una manera en la que tanto los usuarios, las empresas y nuestros oceanos salgan beneficiados de esta puesta en acción.
 
-Elegimos la problemática de la **Contaminación de los Oceanos**, la cual es de las más preocupantes hoy en día.
+Elegimos la problemática de la **Contaminación de los Oceanos** 🌊, la cual es de las más preocupantes hoy en día.
 
 Nuestro desarrollo es una aplicación web que por medio de un sistema de puntos incentive a los usuarios a tomar acción para mejorar esta situación, los puntos pueden ser obtenidos mediante la difusión de información de la problemática, difusión de artículos científicos, artículos de campañas de ayuda y colaborción comunitaria, entre otras.
 
-Además el usuario podrá ganar puntos mediante el cumplimiento de tareas específicas que ayuden al medio ambiente, (tareas medibles y comprobables) propuestas por EXPLORERSH2O, muchas de estas tareas buscarán que el usuario se involucre y genere el gusto por llevar a cabo acciones que ayuden en contra de la contaminación marina, lo que SavingOurOceans busca es generar difusión masiva del proyecto y un cambio social que genere un impacto real, pero y ¿Como se involucran y ayudan las empresas?
+Además el usuario podrá ganar puntos mediante el cumplimiento de tareas específicas que ayuden al medio ambiente, (tareas medibles y comprobables) propuestas por ```EXPLORERSH2O```💧, muchas de estas tareas buscarán que el usuario se involucre y genere el gusto por llevar a cabo acciones que ayuden en contra de la contaminación marina, lo que SavingOurOceans🐡 busca es generar difusión masiva del proyecto y un cambio social que genere un impacto real, pero y ¿Como se involucran y ayudan las empresas? 
 
-Bueno, las empresas se asocian al proyecto de SavingOurOceans, otorgando recompensas a los usuarios a cambio de los puntos, recompensas que ellos junto con el equipo del proyecto decidan ofrecer a nuestros usuarios, estas recompensas pueden ir desde descuentos, productos en collab con SavingOurOceans, entre otros. El único requisito que las empresas tendrán que hacer es ponerse bien la camisa y también buscar hacer un cambio.
+Bueno, las empresas se asocian al proyecto de SavingOurOceans🐙, otorgando recompensas a los usuarios a cambio de los puntos, recompensas que ellos junto con el equipo del proyecto decidan ofrecer a nuestros usuarios, estas recompensas pueden ir desde descuentos, productos en collab con SavingOurOceans🦑, entre otros. El único requisito que las empresas tendrán que hacer es ponerse bien la camisa y también buscar hacer un cambio.
 
 El desarrollo de la aplicación web consta de 2 partes:
 - [x] El [Desarrollo en Frontend](https://github.com/Elchicogamer117/savingouroceansfrtnd) de la aplicación Web 
