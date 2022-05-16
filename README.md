@@ -1,5 +1,25 @@
 # SavingOurOceans-Backend 🐳
 
+Hola nosotros somos el equipo de ```EXPLORERS H2O``` 🐟
+
+Se nos hizó el challenge de generar un desarrollo de software que buscará combatir la problemática que se esta viviendo hoy en día respecto a los oceanos.
+Elegimos tomar el camino de crear el desarrollo del proyecto SavingOurOceans, un proyecto que incentiva a las personas y empresas a generar un cambio, pero de una manera en la que no se requiera que estas vivan u operen cerca del mar, una manera en la que tanto los usuarios, las empresas y nuestros oceanos salgan beneficiados de esta puesta en acción.
+
+Elegimos la problemática de la **Contaminación de los Oceanos**, la cual es de las más preocupantes hoy en día.
+
+Nuestro desarrollo es una aplicación web que por medio de un sistema de puntos incentive a los usuarios a tomar acción para mejorar esta situación, los puntos pueden ser obtenidos mediante la difusión de información de la problemática, difusión de artículos científicos, artículos de campañas de ayuda y colaborción comunitaria, entre otras.
+
+Además el usuario podrá ganar puntos mediante el cumplimiento de tareas específicas que ayuden al medio ambiente, (tareas medibles y comprobables) propuestas por EXPLORERSH2O, muchas de estas tareas buscarán que el usuario se involucre y genere el gusto por llevar a cabo acciones que ayuden en contra de la contaminación marina, lo que SavingOurOceans busca es generar difusión masiva del proyecto y un cambio social que genere un impacto real, pero y ¿Como se involucran y ayudan las empresas?
+
+Bueno, las empresas se asocian al proyecto de SavingOurOceans, otorgando recompensas a los usuarios a cambio de los puntos, recompensas que ellos junto con el equipo del proyecto decidan ofrecer a nuestros usuarios, estas recompensas pueden ir desde descuentos, productos en collab con SavingOurOceans, entre otros. El único requisito que las empresas tendrán que hacer es ponerse bien la camisa y también buscar hacer un cambio.
+
+El desarrollo de la aplicación web consta de 2 partes:
+- [x] El [Desarrollo en Frontend](https://github.com/Elchicogamer117/savingouroceansfrtnd) de la aplicación Web 
+- [App Web](https://elchicogamer117.github.io/savingouroceansfrtnd/index.html)
+- [x] El [Desarrollo en Backend](https://github.com/OlafRuv/SavingOurOceans-Backend) de una API para el manejo de Datos de la aplicación
+- [API](https://saveouroceanapi.azurewebsites.net/)
+
+
 ## Herramientas 🐋
 
 | Herramientas |                   Version                   |
@@ -26,6 +46,9 @@ Para garantizar Calidad 😎 en el desarrollo del backend usamos el modelo de de
 Nuestro sistema debía de almacenar datos por lo cual montamos una Base de Datos de PostgreSQL 🐘 para el almacenamiento de los mismos, por cuestiones de optimización de tiempo usamos Prisma para crear la base de datos a partir de modelos de datos de Prisma y de Semillas o Seeds para la inserción de información de prueba.
 
 Por último para el acceso a la aplicación de Backend que desarrollamos, decidimos montar la API y la BD en la infraestructura de **Azure** puesto que es altamente escalable, mantenible y accesible 💙
+
+![image](https://user-images.githubusercontent.com/62526919/168501197-0ca68210-c0cf-4ce7-90fc-b55c9d04321b.png)
+
 
 ## Implementación 🦈
 
@@ -261,7 +284,7 @@ classDiagram
     +bool booleanValidator(var)
   }
 ```
-### Pruebas
+### Pruebas 🦞
 Para validar nuestro código, creamos pruebas unitarias que corrobora que las funciones 
 hagan lo que se espera. Para esto utilizamos la dependencia `jest`. Las pruebas unitarias se
 crearon para:
@@ -309,7 +332,7 @@ Para correr las pruebas, utilice el siguiente comando desde la terminal.
 > npm test
 ```
 
-### Automatización de Pruebas
+### Automatización de Pruebas 🦐
 Para la automatización de pruebas, utilizamos *Github actions* para facilitar el proceso de verificación de errores, y evitar que esos errores se lleguen a subir al servidor, ocasionando problemas más graves.
 
 El código utilizado para automatizarlo es el siguiente: 
@@ -328,13 +351,13 @@ jobs:
 
 ```
 
-### API
+### API 🌊
 La página web necesita de un servicio API que es el que se encargará de enlazar el frontend con el backend. Para eso nosotros utilizamos la dependencia de *Express* para la utilización de los métodos HTTP, y para conectar los servers, *cors*.
 
 Para ver la documentación de la API y sus *endpoints*, darle click [aquí](https://documenter.getpostman.com/view/20636313/UyxjFm6q).
 
 
-### Base de Datos 
+### Base de Datos 🛥️
 
 Para la creación de la base de datos, utilizamos *postgreSQL*, y para facilitar la escritura de código, se utilizó la dependencia de prisma, el cual permite agilizar la escritura de SQL.
 
@@ -344,7 +367,7 @@ En el archivo de `prisma/schema.prisma`, se desarrollan los modelos que estarán
 ```
 De igual manera podemos encontrar el archivo `prisma/seed.js`, el cual permite general datos para llenar nuestras tablas con cierta información inicial.
 
-### Deployment de Aplicación
+### Deployment de Aplicación 🦀
 
 Para el deployment de la aplicación hicimos uso de Azure 💙, en donde creamos un grupo de recursos llamado Save Our Ocean, además creamos un servidor de PostgreSql para montar la base de datos y creamos un App Service para montar la API
 
@@ -355,4 +378,12 @@ La mayoría de consultas de información son por el método POST por lo cual se 
 ![image](https://user-images.githubusercontent.com/62526919/168500507-1ee3baf6-cd5c-41ef-b9f6-33be6ec2d72b.png)
 
 
-## Evolución Previsible
+## Evolución Previsible 🐡
+Por cuestiones del tiempo de desarrollo, faltaron algunas cosas por implementas, algunas de ellas son mejoras necesarias pero incluso proyectamos evoluciones del sistema que llegaron hasta el Backend de la aplicación. Estos cambios proyectados como evoluciones previsibles son los siguientes:
+
+- [ ] Desarrollo de modelos faltantes
+- [ ] Desarrollo de servicio y controladores de Artículos
+- [ ] Desarrollo de pruebas de la API
+- [ ] Creación de endpoints de servicios de Artículos
+- [ ] Sugerencias, ponte en contacto con los ``EXPLORERS H2O``
+
