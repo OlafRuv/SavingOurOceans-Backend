@@ -389,3 +389,11 @@ Por cuestiones del tiempo de desarrollo, faltaron algunas cosas por implementas,
 - [ ] Creación de endpoints de servicios de Artículos
 - [ ] Sugerencias, ponte en contacto con los ``EXPLORERS H2O``
 
+## Colaboradores
+- [@felixVelazco](https://github.com/felixVelazco) 🐠
+- [@ErickCasGlez](https://github.com/ErickCasGlez) 🦐
+- [@Elchicogamer117](https://github.com/Elchicogamer117) 🐡
+- [@AliciaGaona](https://github.com/AliciaGaona) 🦑
+- [@OlafRuv](https://github.com/OlafRuv) 🐙
+
+
