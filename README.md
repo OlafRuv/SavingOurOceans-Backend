@@ -22,6 +22,9 @@ El desarrollo de la aplicación web consta de 2 partes:
 - [API](https://saveouroceanapi.azurewebsites.net/)
 
 
+[Video tiktok](https://vm.tiktok.com/ZML3sEAjc/?k=1)
+
+
 ## Herramientas 🐋
 
 | Herramientas |                   Version                   |
