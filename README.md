@@ -17,7 +17,7 @@ Bueno, las empresas se asocian al proyecto de SavingOurOceans🐙, otorgando rec
 
 El desarrollo de la aplicación web consta de 2 partes:
 - [x] El [Desarrollo en Frontend](https://github.com/Elchicogamer117/savingouroceansfrtnd) de la aplicación Web 
-- [App Web](https://elchicogamer117.github.io/savingouroceansfrtnd/index.html)
+- [App Web](https://elchicogamer117.github.io/SavingOurOceans/)
 - [x] El [Desarrollo en Backend](https://github.com/OlafRuv/SavingOurOceans-Backend) de una API para el manejo de Datos de la aplicación
 - [API](https://saveouroceanapi.azurewebsites.net/)
 
